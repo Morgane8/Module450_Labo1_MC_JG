@@ -13,3 +13,7 @@ class Checkers:
     @staticmethod
     def check_if_there_is_one_at_sign(email_address):
         return bool('@' in email_address and email_address.count('@') == 1)  
+    
+    @staticmethod
+    def check_for_domain_name(email_address):
+        pass

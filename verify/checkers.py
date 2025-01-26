@@ -12,4 +12,10 @@ class Checkers:
     
     @staticmethod
     def check_if_there_is_one_at_sign(email_address):
-        pass
+        if '@' in email_address:
+            if email_address.count('@') == 1:
+                return True
+            else:
+                return False
+        else:
+            return False    

@@ -2,11 +2,10 @@
 
 import re
 
+# Define regex for local part before the '@'
+LOCAL_PART_REGEX = re.compile(r"^[a-zA-Z0-9._%+-]+@")
+
 class Checkers:
     @staticmethod
     def check_if_name_before_at_sign(email_address):
-        local_regex = re.compile(r"^[a-zA-Z0-9._%+-]+@")
-        if re.match(local_regex, email_address):
-            return True
-        else:
-            return False
+        return bool(LOCAL_PART_REGEX.match(email_address))

@@ -16,4 +16,8 @@ class Checkers:
     
     @staticmethod
     def check_for_domain_name(email_address):
-        pass
+        domain_regex = re.compile(r".+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$")
+        if re.match(domain_regex, email_address):
+            return True
+        else:
+            return False

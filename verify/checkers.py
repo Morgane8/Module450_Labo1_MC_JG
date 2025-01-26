@@ -9,3 +9,7 @@ class Checkers:
     @staticmethod
     def check_if_name_before_at_sign(email_address):
         return bool(LOCAL_PART_REGEX.match(email_address))
+    
+    @staticmethod
+    def check_if_there_is_one_at_sign(email_address):
+        pass

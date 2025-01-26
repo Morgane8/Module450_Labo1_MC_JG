@@ -15,3 +15,16 @@ def test_name_before_at_sign(email_address, expected_value):
     returned_value = Checkers.check_if_name_before_at_sign(email_address)
     # assert
     assert returned_value == expected_value
+
+# TDD: iteration 2
+# arrange
+@pytest.mark.parametrize("email_address, expected_value", [
+    ("john@doe.com", True),
+    ("john.doe.com", False),
+    ("john@doe@test.com", False),
+])
+def test_if_there_is_one_at_sign(email_address, expected_value):
+    # act
+    returned_value = Checkers.check_if_there_is_one_at_sign(email_address)
+    # assert
+    assert returned_value == expected_value

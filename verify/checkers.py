@@ -5,6 +5,9 @@ import re
 # Define regex for local part before the '@'
 LOCAL_PART_REGEX = re.compile(r"^[a-zA-Z0-9._%+-]+@")
 
+# Define regex for domain after the '@'
+DOMAIN_REGEX = re.compile(r".+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$")
+
 class Checkers:
     @staticmethod
     def check_if_name_before_at_sign(email_address):
@@ -16,8 +19,4 @@ class Checkers:
     
     @staticmethod
     def check_for_domain_name(email_address):
-        domain_regex = re.compile(r".+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$")
-        if re.match(domain_regex, email_address):
-            return True
-        else:
-            return False
+        return bool(DOMAIN_REGEX.match(email_address))

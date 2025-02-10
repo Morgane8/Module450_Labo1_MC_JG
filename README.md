@@ -97,6 +97,34 @@ You can run as many iteration as you wish until you exit the app.
 │   |       ├── ci.yml
 ```
 
+## Access test logs
+
+Once you push your code to GitHub, the tests run automatically using GitHub Actions. You can access the test logs by following these steps:
+
+- Go to the GitHub Repository
+
+- Open the repository where the tests are set up.
+  Navigate to the Actions Tab
+
+- Click on the "Actions" tab in the top navigation bar.
+  Select the Latest Workflow Run
+
+- You'll see a list of workflow runs (automated test executions).
+  Click on the most recent run that corresponds to the latest commit.
+  View the Job Details
+
+- Inside the workflow, you'll find different jobs (e.g., "Run Tests").
+  Click on the "Run Tests" or a similarly named job.
+  Check the Logs
+
+- Scroll down to view the logs. If a test failed, GitHub Actions will highlight the errors.
+
+### Test logs link
+
+Use the following link the directly go to the test log related page.
+
+[View Test Runs](https://github.com/Morgane8/Module450_Labo1_MC_JG/actions)
+
 ## Credits
 
 Morgane Cachin and Jonathan Gabioud

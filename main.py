@@ -27,7 +27,6 @@ def test_email_address():
         print("\nYour email address respect all naming rules.")
     else:
         print("\nYour email address present some issues, see above prompt to see what's wrong.")
-    sys.exit(1)
 
 if __name__ == "__main__":
     print("Welcome to this email checker!")

@@ -81,15 +81,17 @@ You can run as many iteration as you wish until you exit the app.
 ## Tree structure (will evolve during development)
 
 ```
+├── .dockerignore
+├── .gitignore
 ├── Dockerfile
 ├── main.py
 ├── README.md
 ├── requirements.txt
-├── .gitignore
 ├── tests
-│   ├
+│   ├── test_checkers.py
+│   ├── __init__.py
 ├── verify
-│   ├
+│   ├── checkers.py
 ├── .github
 │   ├── workflows
 │   |       ├── ci.yml

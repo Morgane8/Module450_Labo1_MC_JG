@@ -46,6 +46,8 @@ Then, navigate to the root folder of the app.
 
 Here, use the following command to build the docker image (replace 'my-image-name' by the desired name) :
 
+> !!! On Windows, ensure Docker Desktop is running !!!
+
 ```bash
 docker build -t my-image-name .
 ```
